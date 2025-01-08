@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+  <title>Storage Order Manager</title>
+</head>
+<body app-theme="light">
+  <header id="om-app-header">
+    <span id="om-app-name">Storage Order Manager</span>
+    <div id="om-app-header__right-block">
+      <div class="user-info">
+        <img src="./images/lapki.jpg" alt="User avatar" class="user-info__avatar" />
+        <span class="user-info__username">Worker</span>
+      </div>
+    </div>
+  </header>
+  <main id="om-app-base">
+    <ul class="orderlists-list">
+
+      <!-- <li class="orderlist">
+        <header class="orderlist__header">
+          <div class="orderlist__header__controls">
+            <button class="orderlist-edit" type="button">
+              <img src="./assets/edit.svg" alt="Edit order" />
+            </button>
+            <button class="orderlist-delete" type="button">
+              <img src="./assets/delete-button.svg" alt="Delete order" />
+            </button>
+          </div>
+          <div class="orderlist__header__client">Client</div>
+          <div class="orderlist__header__date">Date</div>
+        </header>
+
+
+        <ul class="orderlist__orderpositions-list">
+          <li class="orderposition">
+            <div class="orderposition__info">
+              <span class="orderposition__info__item-name">Item name</span>
+              <span class="orderposition__info__amount">Item amount</span>
+            </div>
+
+            <div class="orderposition__controls">
+              <button class="orderposition-move-back" type="button">
+                <img src="./assets/left-arrow.svg" alt="Move orderposition to previous orderlist" />
+              </button>
+              <button class="orderposition-move-forward" type="button">
+                <img src="./assets/right-arrow.svg" alt="Move orderposition to next orderlist" />
+              </button>
+              <button class="orderposition-edit" type="button">
+                <img src="./assets/edit.svg" alt="Edit orderposition" />
+              </button>
+              <button class="orderposition-delete" type="button">
+                <img src="./assets/delete-button.svg" alt="Delete orderposition" />
+              </button>
+            </div>
+
+            <div class="orderposition__edit">
+              <div class="orderposition__edit__input">
+                
+                <input class="orderposition__edit__input__amount" type="number" min="1" />
+              </div>
+
+              <div class="orderposition__edit__controls" type="button">
+                <button class="orderposition__edit__controls__apply">
+                  Принять
+                </button>
+                <button class="orderposition__edit__controls__cancel" type="button">
+                  Отмена
+                </button>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        
+        <button class="orderlist__add-orderposition-btn">
+          Добавить позицию
+        </button>
+      </li> -->
+
+      <li class="orderlist">
+        <button id="add-orderlist-btn">
+          Добавить заказ
+        </button>
+        <input
+          type="text"
+          id="add-orderlist-input-client"
+          placeholder="Заказчик"
+        />
+        <input
+          type="date"
+          id="add-orderlist-input-date"
+        />
+      </li>
+    </ul>
+    <button id="next-day-button">След. день</button>
+  </main>
+</body>
+</html>
