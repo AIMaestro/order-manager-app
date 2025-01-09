@@ -472,6 +472,11 @@ class App {
                 inputClient.value = '';
                 inputDate.value = this.#currentDate;
 
+                inputClient.style.display = 'none';
+                inputDate.style.display = 'none';
+    
+                document.getElementById('add-orderlist-btn').style.display = 'initial';
+
             } catch (error) {
                 alert(error);
             }
